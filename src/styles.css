@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+.selected {
+  background-color: var(--selected-background-color) !important;
+  color: white;
+}
+
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+
+.heroes li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: var(--background-color);
+  margin: 0.5em;
+  padding: 0.3em 0;
+  height: 1.6em;
+  border-radius: var(--border-radius);
+}
+
+.heroes li.selected:hover {
+  background-color: var(--selected-hover-background-color) !important;
+  color: white;
+}
+
+.heroes li:hover {
+  color: var(--hover-color);
+  background-color: #ddd;
+  left: 0.1em;
+}
+
+.heroes .text {
+  position: relative;
+  top: -3px;
+}
+
+.heroes .badge {
+  display: inline-block;
+  font-size: small;
+  color: var(--badge-text-color);
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: var(--badge-background-color);
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: 0.8em;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
